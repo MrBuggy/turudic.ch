@@ -1,0 +1,14 @@
+$font-path-cinzel: "../../../../assets/fonts/Cinzel";
+$font-path-poppins: "../../../../assets/fonts/Poppins";
+
+// Cinzel
+@font-face {
+  font-family: "Cinzel", serif;
+  src: url($font-path-cinzel+"/Cinzel-Regular.ttf") format("truetype");
+}
+
+// Poppins
+@font-face {
+  font-family: "Poppins", sans-serif;
+  src: url($font-path-poppins+"/Poppins-Regular.ttf") format("truetype");
+}

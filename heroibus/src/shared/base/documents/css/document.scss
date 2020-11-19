@@ -1,0 +1,14 @@
+@import '../../../utils/typo/css/typo.scss';
+
+body {
+  font-family: $font-cinzel;
+  margin: 0;
+  overflow-x: hidden;
+  padding: 0;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: border-box;
+}

@@ -1,0 +1,8 @@
+$fallback-font: 'Arial', sans-serif;
+$font-cinzel: 'Cinzel', serif;
+$font-poppins: 'Poppins', sans-serif;
+
+@mixin heading {
+	font-family: $font-poppins;
+	font-weight: 400;
+}
