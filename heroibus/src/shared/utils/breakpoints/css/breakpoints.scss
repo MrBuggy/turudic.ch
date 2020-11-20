@@ -1,0 +1,17 @@
+$break-point-md: 768px;
+$break-point-lg: 1024px;
+$break-point-xl: 1280px;
+
+$breakpoints-min-width: (
+	'sm': null,
+	'md': $break-point-md,
+	'lg': $break-point-lg,
+	'xl': $break-point-xl
+);
+
+$breakpoints-max-width: (
+	'sm': $break-point-md - 1px,
+	'md': $break-point-lg - 1px,
+	'lg': $break-point-xl - 1px,
+	'xl': null
+);

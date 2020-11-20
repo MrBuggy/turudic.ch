@@ -1,0 +1,37 @@
+@import '../../breakpoints/css/breakpoints.scss';
+
+@mixin media-query($vp-start, $vp-end: null) {
+	$break-point-min: map-get($breakpoints-min-width, $vp-start);
+	$break-point-max: map-get($breakpoints-max-width, $vp-start);
+
+	@if ($vp-end != null) {
+		$vp-end-max-break-point: map-get($breakpoints-max-width, $vp-end);
+
+		@if ($break-point-min != null) {
+			$vp-end-min-break-point: map-get($breakpoints-min-width, $vp-end);
+			@if (($vp-end-min-break-point == null) or ($break-point-min > $vp-end-min-break-point)) {
+				$break-point-min: $vp-end-min-break-point;
+			}
+		}
+
+		@if ($break-point-max != null) {
+			$vp-end-max-break-point: map-get($breakpoints-max-width, $vp-end);
+			@if (($vp-end-max-break-point == null) or ($break-point-max < $vp-end-max-break-point)) {
+				$break-point-max: $vp-end-max-break-point;
+			}
+		}
+	}
+
+	@if (($break-point-min == null) and ($break-point-max != null)) {
+		@media (max-width: $break-point-max) { @content; }
+	}
+	@else if (($break-point-min != null) and ($break-point-max != null)) {
+		@media (min-width: $break-point-min) and (max-width: $break-point-max) { @content; }
+	}
+	@else if (($break-point-min != null) and ($break-point-max == null)) {
+		@media (min-width: $break-point-min) { @content; }
+	}
+	@else {
+		@content;
+	}
+}

@@ -1,8 +1,5 @@
-$fallback-font: 'Arial', sans-serif;
-$font-cinzel: 'Cinzel', serif;
-$font-poppins: 'Poppins', sans-serif;
+@import '../../breakpoints/css/breakpoints.scss';
+@import '../../media-queries/css/media-queries.scss';
 
-@mixin heading {
-	font-family: $font-poppins;
-	font-weight: 400;
-}
+
+
