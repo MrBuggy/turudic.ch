@@ -1,14 +1,25 @@
-$font-path-cinzel: "../../../../assets/fonts/Cinzel";
-$font-path-poppins: "../../../../assets/fonts/Poppins";
+$font-path: "../../../../assets/fonts";
 
-// Cinzel
+/* cinzel-regular - latin */
 @font-face {
-  font-family: "Cinzel", serif;
-  src: url($font-path-cinzel+"/Cinzel-Regular.ttf") format("truetype");
+	font-family: "Cinzel";
+	font-style: normal;
+	font-weight: 400;
+	src: url($font-path+"/Cinzel/cinzel-v11-latin-regular.woff2") format("woff2"); /* Super Modern Browsers */
+	src: local(''),
+		 url($font-path+"/Cinzel/cinzel-v11-latin-regular.woff") format("woff"), /* Modern Browsers */
+		 url($font-path+"/Cinzel/cinzel-v11-latin-regular.ttf") format("truetype"), /* Safari, Android, iOS */
+		 url($font-path+"/Cinzel/cinzel-v11-latin-regular.svg#Cinzel") format("svg"); /* Legacy iOS */
 }
 
-// Poppins
+/* poppins-regular - latin */
 @font-face {
-  font-family: "Poppins", sans-serif;
-  src: url($font-path-poppins+"/Poppins-Regular.ttf") format("truetype");
+	font-family: "Poppins";
+	font-style: normal;
+	font-weight: 400;
+	src: url($font-path+"/Poppins/poppins-v15-latin-regular.woff2") format("woff2"); /* Super Modern Browsers */
+	src: local(''),
+		 url($font-path+"/Poppins/poppins-v15-latin-regular.woff") format("woff"), /* Modern Browsers */
+		 url($font-path+"/Poppins/poppins-v15-latin-regular.ttf") format("truetype"), /* Safari, Android, iOS */
+		 url($font-path+"/Poppins/poppins-v15-latin-regular.svg#Poppins") format("svg"); /* Legacy iOS */
 }

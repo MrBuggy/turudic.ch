@@ -1,7 +1,7 @@
 @import '../../../utils/typo/css/typo.scss';
 
 body {
-  font-family: $font-cinzel;
+  font-family: $font-poppins, $font-fallback;
   margin: 0;
   overflow-x: hidden;
   padding: 0;
@@ -11,4 +11,8 @@ body {
 
 * {
   box-sizing: border-box;
+}
+
+h1 {
+	font-family: $font-cinzel;
 }
