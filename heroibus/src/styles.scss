@@ -1,3 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @import './shared/base/webfonts/css/webfonts.scss';
 @import './shared/base/documents/css/document.scss';
+// @import './shared/base/reset/css/reset.scss';
+@import './shared/base/layout/css/layout.scss';
+@import "~bootstrap-4-grid/css/grid.min.css";
+@import "~@fortawesome/fontawesome-free/css/all.min.css";

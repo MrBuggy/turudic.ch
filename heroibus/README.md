@@ -17,3 +17,16 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## Repository
 
 Stored as [GitHub Repository](https://github.com/MrBuggy/turudic.ch)
+
+## Setup
+
+### Base
+
+-  [Document Styles](./src/shared/base/documents/readme.md)
+-  [Grid and Layout](./src/shared/base/layout/readme.md)
+-  [Webfonts](./src/shared/base/webfonts/readme.md)
+-  [Fontawesome Icons](https://www.npmjs.com/package/@fortawesome/fontawesome-free)
+
+### Utils
+
+-  [Reusable Utils](./src/shared/utils/readme.md)
