@@ -1,26 +1,20 @@
 @import '../definition/definition.scss';
 @import '../../breakpoints/css/breakpoints.scss';
 
-$font-cinzel: "Cinzel", serif;
-$font-poppins: "Poppins", sans-serif;
-$font-fallback: "Arial", sans-serif;
-
-@mixin title($size: null) {
-	@if $size == "sm" {
-		font-size: 26px;
-	} @else if $size == "lg" {
-		font-size: 80px;
-	} @else {
-		@error "Parameter #{$size} unknown.";
-	}
-}
-
-@mixin text($size: null) {
-	@if $size == "sm" {
-		font-size: 16px;
-	} @else if $size == "lg" {
-		font-size: 36px;
-	} @else {
-		@error "Parameter #{$size} unknown.";
+@mixin font($name) {
+	$definition: map-get($fonts, $name);
+	@each $key, $value in $definition {
+		$vp-definition: map-get($definition, $key);
+		@if $key == "all" {
+			@each $prop, $val in $vp-definition {
+				#{$prop}: $val;
+			}
+		} @else {
+			@media (min-width: get-bp($key)) {
+				@each $prop, $val in $vp-definition {
+					#{$prop}: $val;
+				}
+			}
+		}
 	}
 }

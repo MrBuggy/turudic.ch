@@ -1,0 +1,85 @@
+$font-cinzel: "Cinzel", serif;
+$font-poppins: "Poppins", sans-serif;
+$font-fallback: "Arial", sans-serif;
+$font-body: $font-cinzel, $font-fallback;
+
+$fonts: (
+	'body': (
+		all: (
+			font-family: $font-body,
+			font-size: 14px,
+			line-height: 1.5
+		)
+	),
+	'button': (
+		all: (
+			font-family: $font-poppins,
+			font-size: 26px,
+			line-height: 1.5
+		),
+		lg: (
+			font-size: 42px,
+		)
+	),
+	'footer': (
+		all: (
+			font-family: $font-cinzel,
+			font-size: 20px,
+			line-height: 1.5
+		),
+		lg: (
+			font-size: 54px
+		)
+	),
+	'popup-text': (
+		all: (
+			font-family: $font-cinzel,
+			font-size: 24px,
+			line-height: 1.5
+		),
+		lg: (
+			font-size: 36px
+		)
+	),
+	'popup-title': (
+		all: (
+			font-family: $font-poppins,
+			font-size: 18px,
+			line-height: 1.5
+		),
+		lg: (
+			font-size: 26px
+		)
+	),
+	'quote': (
+		all: (
+			font-family: $font-cinzel,
+			font-size: 20px,
+			line-height: 1.5
+		),
+		lg: (
+			font-size: 40px
+		)
+	),
+	'text': (
+		all: (
+			font-family: $font-poppins,
+			font-size: 16px,
+			line-height: 1.5
+		),
+		lg: (
+			font-size: 36px
+		)
+	),
+	'title': (
+		all: (
+			font-family: $font-cinzel,
+			font-size: 26px,
+			line-height: 1.5
+		),
+		lg: (
+			font-size: 80px,
+			line-height: 1.8
+		)
+	),
+);

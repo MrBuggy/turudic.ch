@@ -1,18 +1,15 @@
 @import '../../../utils/typos/css/typos.scss';
 
 body {
-  font-family: $font-poppins, $font-fallback;
-  margin: 0;
-  overflow-x: hidden;
-  padding: 0;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
+	@include font('body');
+
+	margin: 0;
+	overflow-x: hidden;
+	padding: 0;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
 }
 
 * {
-  box-sizing: border-box;
-}
-
-h1 {
-	font-family: $font-cinzel;
+	box-sizing: border-box;
 }

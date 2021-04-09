@@ -1,20 +1,12 @@
 @import '../shared/utils/breakpoints/css/breakpoints.scss';
+@import '../shared/utils/colors/css/colors.scss';
 @import '../shared/utils/typos/css/typos.scss';
 
 h1 {
-	@include title(sm);
-	font-family: $font-cinzel;
-
-	@media (min-width: $bp-lg) {
-		@include title(lg);
-	}
+	@include font('title');
+	color: $blue;
 }
 
 p {
-	@include text(sm);
-	font-family: $font-poppins;
-
-	@media (min-width: $bp-lg) {
-		@include text(lg);
-	}
+	@include font('text');
 }
