@@ -1,0 +1,14 @@
+@import '../shared/utils/breakpoints/css/breakpoints.scss';
+@import '../shared/utils/colors/css/colors.scss';
+@import '../shared/utils/typos/css/typos.scss';
+
+h1 {
+	@include font('title');
+	color: $blue;
+	text-align: center;
+}
+
+p {
+	@include font('text');
+	text-align: center;
+}

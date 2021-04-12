@@ -1,0 +1,20 @@
+@import '../definition/definition.scss';
+@import '../../breakpoints/css/breakpoints.scss';
+
+@mixin font($name) {
+	$definition: map-get($fonts, $name);
+	@each $key, $value in $definition {
+		$vp-definition: map-get($definition, $key);
+		@if $key == "all" {
+			@each $prop, $val in $vp-definition {
+				#{$prop}: $val;
+			}
+		} @else {
+			@media (min-width: get-bp($key)) {
+				@each $prop, $val in $vp-definition {
+					#{$prop}: $val;
+				}
+			}
+		}
+	}
+}

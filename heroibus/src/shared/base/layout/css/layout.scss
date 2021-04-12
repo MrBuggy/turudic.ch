@@ -1,0 +1,14 @@
+@import '../../../utils/breakpoints/css/breakpoints.scss';
+@import '../../../utils/spacings/css/spacings.scss';
+
+.l-outer + .l-outer {
+	margin-top: $spacer-20;
+
+	@media (min-width: get-bp('md')) {
+		margin-top: $spacer-80;
+	}
+}
+
+.l-inner {
+	padding: $spacer-0;
+}

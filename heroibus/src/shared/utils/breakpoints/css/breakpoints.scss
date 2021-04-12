@@ -1,0 +1,16 @@
+$breakpoints: (
+	sm: 768px,
+	md: 1024px,
+	lg: 1280px,
+	xl: 1400px
+);
+
+@function get-bp($bp) {
+	@if $bp {
+		$bp: map-get($breakpoints, $bp);
+	} @else {
+		@error "Parameter #{$vp} is unknown or empty.";
+	}
+
+	@return $bp;
+}
