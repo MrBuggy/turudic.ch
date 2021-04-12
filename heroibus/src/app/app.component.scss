@@ -5,8 +5,10 @@
 h1 {
 	@include font('title');
 	color: $blue;
+	text-align: center;
 }
 
 p {
 	@include font('text');
+	text-align: center;
 }
