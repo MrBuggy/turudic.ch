@@ -4,7 +4,7 @@
 .l-outer + .l-outer {
 	margin-top: $spacer-20;
 
-	@media (min-width: get-bp('md')) {
+	@media (min-width: $bp-md) {
 		margin-top: $spacer-80;
 	}
 }

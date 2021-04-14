@@ -5,11 +5,16 @@ $breakpoints: (
 	xl: 1400px
 );
 
+$bp-sm: map-get($breakpoints, 'sm');
+$bp-md: map-get($breakpoints, 'md');
+$bp-lg: map-get($breakpoints, 'lg');
+$bp-xl: map-get($breakpoints, 'xl');
+
 @function get-bp($bp) {
 	@if $bp {
 		$bp: map-get($breakpoints, $bp);
 	} @else {
-		@error "Parameter #{$vp} is unknown or empty.";
+		@error "Parameter #{$bp} is unknown or empty.";
 	}
 
 	@return $bp;
