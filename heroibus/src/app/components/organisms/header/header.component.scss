@@ -1,0 +1,10 @@
+@import '../../../../shared/utils/breakpoints/css/breakpoints.scss';
+@import '../../../../shared/utils/spacings/css/spacings.scss';
+
+.header {
+	padding-top: $spacer-30;
+
+	@media (min-width: $bp-md) {
+		padding-top: $spacer-70;
+	}
+}
