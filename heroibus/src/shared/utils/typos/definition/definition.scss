@@ -14,11 +14,12 @@ $fonts: (
 	'button': (
 		all: (
 			font-family: $font-poppins,
-			font-size: 26px,
+			font-size: 15px,
+			font-weight: 700,
 			line-height: 1.5
 		),
-		lg: (
-			font-size: 42px,
+		md: (
+			font-size: 30px,
 		)
 	),
 	'footer': (
@@ -27,7 +28,7 @@ $fonts: (
 			font-size: 20px,
 			line-height: 1.5
 		),
-		lg: (
+		md: (
 			font-size: 54px
 		)
 	),
@@ -37,8 +38,8 @@ $fonts: (
 			font-size: 24px,
 			line-height: 1.5
 		),
-		lg: (
-			font-size: 36px
+		md: (
+			font-size: 30px
 		)
 	),
 	'popup-title': (
@@ -47,7 +48,7 @@ $fonts: (
 			font-size: 18px,
 			line-height: 1.5
 		),
-		lg: (
+		md: (
 			font-size: 26px
 		)
 	),
@@ -57,8 +58,8 @@ $fonts: (
 			font-size: 20px,
 			line-height: 1.5
 		),
-		lg: (
-			font-size: 40px
+		md: (
+			font-size: 36px
 		)
 	),
 	'text': (
@@ -67,8 +68,8 @@ $fonts: (
 			font-size: 16px,
 			line-height: 1.5
 		),
-		lg: (
-			font-size: 36px
+		md: (
+			font-size: 30px
 		)
 	),
 	'title': (
@@ -77,8 +78,8 @@ $fonts: (
 			font-size: 26px,
 			line-height: 1.5
 		),
-		lg: (
-			font-size: 80px,
+		md: (
+			font-size: 60px,
 			line-height: 1.8
 		)
 	),

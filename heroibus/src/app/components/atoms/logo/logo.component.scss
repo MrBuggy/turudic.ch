@@ -1,0 +1,9 @@
+@import '../../../../shared/utils/breakpoints/css/breakpoints.scss';
+
+.logo {
+	width: 241px;
+
+	@media (min-width: $bp-md) {
+		width: 632px;
+	}
+}
