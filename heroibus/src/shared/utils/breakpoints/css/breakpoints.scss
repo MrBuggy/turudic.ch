@@ -5,11 +5,6 @@ $breakpoints: (
 	xl: 1400px
 );
 
-$bp-sm: map-get($breakpoints, 'sm');
-$bp-md: map-get($breakpoints, 'md');
-$bp-lg: map-get($breakpoints, 'lg');
-$bp-xl: map-get($breakpoints, 'xl');
-
 @function get-bp($bp) {
 	@if $bp {
 		$bp: map-get($breakpoints, $bp);
@@ -19,3 +14,8 @@ $bp-xl: map-get($breakpoints, 'xl');
 
 	@return $bp;
 }
+
+$bp-sm: get-bp('sm');
+$bp-md: get-bp('md');
+$bp-lg: get-bp('lg');
+$bp-xl: get-bp('xl');
